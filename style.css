@@ -38,6 +38,18 @@ body{
   margin: 0.5rem;
   border-radius: 50%;
 }
+.tools_animation{
+  animation-name: animate_tools;
+  animation-duration: 2s;
+}
+@keyframes animate_tools {
+  0%{
+    transform: scale(0.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
 .pencil_container{
   background-color: rgb(223, 228, 223);
   width: 6rem;
@@ -92,4 +104,56 @@ body{
 }
 .eraser_container input{
   width: 80%;
+}
+.sticky_container{
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  top: 15rem;
+  left: 15rem;
+}
+.sticky_header{
+  height: 2rem;
+  background-color: orange;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.sticky_header > *{
+  width: 1rem;
+  height: 1rem;
+  background-color: green;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+}
+.minimize{
+  background-color: green;
+}
+.remove{
+  background-color: red;
+}
+.span{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+}
+.sticky_note{
+  height: calc(100% - 2rem);
+  background-color: rgb(234, 236, 234);
+  box-shadow: 0 0 1rem rgb(44,88,65);
+  
+}
+textarea{
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+}
+img{
+  width: 100%;
+  height: 100%;
 }
