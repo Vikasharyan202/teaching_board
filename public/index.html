@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teaching Board</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/601d8f22d6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  
+    <div class="options_container">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="tools_container tools_animation">
+      <img class="pencil" src="images/pencil.jpeg">
+      <img class="eraser" src="images/eraser.webp">
+      <img class="download" src="images/download.jpeg">
+      <img class="upload" src="images/upload.webp">
+      <img class="sticky" src="images/sticky.jpeg">
+      <img class="redo" src="images/redo.jpeg">
+      <img class="undo" src="images/undo.jpeg">
+    </div>
+    <div class="pencil_container">
+      <div class="pencil_width_container">
+        <input type="range" min="2" max="10" value="3" class="pencil_width">
+      </div>
+      <div class="pencil_color_container">
+        <div class="black pencil_color"></div>
+        <div class="red pencil_color"></div>
+        <div class="blue pencil_color"></div>
+      </div>
+    </div>
+    <div class="eraser_container">
+      <input type="range" min="4" max="24" value="5" class="eraser_width">
+    </div>
+    <canvas></canvas>
+ 
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
+    <script>
+      let socket = io.connect("http://localhost:5000");
+    </script>
+  <script src="tools.js"></script>
+  <script src="canvas.js"></script>
+</body>
+
+</html>

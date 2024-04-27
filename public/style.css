@@ -1,0 +1,158 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.options_container{
+  width: 4rem;
+  height: 4rem;
+  background: #edeeed;
+  box-shadow: #f1ecce 5px 5px 10px;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+.tools_container{
+  min-width: 60vw;
+  background-color: rgb(78, 147, 185);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 2rem;
+  left: 25vw;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(75, 141, 169, 0.8);
+}
+
+.tools_container img{
+  width: 50px;
+  margin: 0.5rem;
+  border-radius: 50%;
+}
+.tools_animation{
+  animation-name: animate_tools;
+  animation-duration: 2s;
+}
+@keyframes animate_tools {
+  0%{
+    transform: scale(0.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.pencil_container{
+  background-color: rgb(223, 228, 223);
+  width: 6rem;
+  height: 5rem;
+  position: absolute;
+  top: 6.5rem;
+  left: 25vw;
+  border-radius: 4px;
+  display: none;
+}
+.pencil_width_container{
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
+}
+.pencil_width_container input{
+  width: 80%;
+}
+.pencil_color_container{
+  display: flex;
+  justify-content: center;
+  margin-top: 0.8rem;
+  gap: 1rem;
+  
+}
+.pencil_color{
+  width: 1.5rem;
+  height: 2rem;
+  border-radius: 50%;
+
+}
+.black{
+  background-color: black;
+}
+.red{
+  background-color: red;
+}
+.blue{
+  background-color: blue;
+}
+.eraser_container{
+  background-color: rgb(223, 228, 223);
+  width: 6rem;
+  height: 3rem;
+  border-radius: 4px;
+  position: absolute;
+  top: 6.5rem;
+  left: 35vw;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.eraser_container input{
+  width: 80%;
+}
+.sticky_container{
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  top: 15rem;
+  left: 15rem;
+}
+.sticky_header{
+  height: 2rem;
+  background-color: orange;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.sticky_header > *{
+  width: 1rem;
+  height: 1rem;
+  background-color: green;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+}
+.minimize{
+  background-color: green;
+}
+.remove{
+  background-color: red;
+} 
+.span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+}
+.sticky_note{
+  height: calc(100% - 2rem);
+  background-color: rgb(234, 236, 234);
+  box-shadow: 0 0 1rem rgb(44,88,65);
+  
+}
+textarea{
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
