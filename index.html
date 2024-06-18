@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teaching Board</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./public/style.css">
   <script src="https://kit.fontawesome.com/601d8f22d6.js" crossorigin="anonymous"></script>
 </head>
 
@@ -15,13 +15,13 @@
       <i class="fa-solid fa-bars"></i>
     </div>
     <div class="tools_container tools_animation">
-      <img class="pencil" src="images/pencil.jpeg">
-      <img class="eraser" src="images/eraser.webp">
-      <img class="download" src="images/download.jpeg">
-      <img class="upload" src="images/upload.webp">
-      <img class="sticky" src="images/sticky.jpeg">
-      <img class="redo" src="images/redo.jpeg">
-      <img class="undo" src="images/undo.jpeg">
+      <img class="pencil" src="./public/images/pencil.jpeg">
+      <img class="eraser" src="./public/images/eraser.webp">
+      <img class="download" src="./public/images/download.jpeg">
+      <img class="upload" src="./public/images/upload.webp">
+      <img class="sticky" src="./public/images/sticky.jpeg">
+      <img class="redo" src="./public/images/redo.jpeg">
+      <img class="undo" src="./public/images/undo.jpeg">
     </div>
     <div class="pencil_container">
       <div class="pencil_width_container">
@@ -40,10 +40,10 @@
  
     <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
     <script>
-      let socket = io.connect("http://localhost:5000");
+      let socket = io.connect("http://localhost:3000");
     </script>
-  <script src="tools.js"></script>
-  <script src="canvas.js"></script>
+  <script src="./public/tools.js"></script>
+  <script src="./public/canvas.js"></script>
 </body>
 
 </html>
